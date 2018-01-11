@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Red Social Oficios</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/profile-job.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default nav-menu1">
+      <div class="container-fluid">
+        <div class="navbar-header nav-head">
+          <!--boton barras para la version mobile-->
+          <button type="button" class="navbar-toggle collapsed boton-hamburger" data-toggle="collapse" data-target="#navbar-1">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--logo obchod-->
+          <a class="navbar-brand" href="#">
+            <img src="../assets/images/logo2.PNG" alt="logo-menu">
+          </a>
+          <h1 class="white title2">Obchod</h1>
+        </div>
+        <!--Menu despegable para desktop y mobile-->
+        <div class="collapse navbar-collapse" id="navbar-1">
+          <!--se posciona al lado derecho en desktop-->
+          <ul class="nav navbar-nav navbar-right ">
+            <li><a href="#">Quienes somos</a></li>
+            <li><a href="#">Oficios</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="gradient">
+    <!--sección foto-->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <a class="navbar-brand white" href="list-services.html"><i class="fa fa-home" aria-hidden="true"></i></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <figure class="center-block">
+            <img src="../assets/images/list-service/electricista-1.jpg" alt="electricista" class="center-block img-circle">
+          </figure>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="text-center white">Datos personales</h3>
+          <div class="dates" id=date>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--seccion para subi su portafolio-->
+    <div class="container">
+      <div class="row ">
+        <div class="col-xs-12 ">
+          <div class="gray">
+            <h3 class="white text-center">Para que te conozcan más, llena tu portafolio con tus trabajos</h3>
+            <div id="preview" class="thumbnail preview">
+              <a href="#" id="file-select" class="btn btn-default">Elige la foto que desees </a>
+              <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNzEiIGhlaWdodD0iMTgwIj48cmVjdCB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgZmlsbD0iI2VlZSI+PC9yZWN0Pjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9Ijg1LjUiIHk9IjkwIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+MTcxeDE4MDwvdGV4dD48L3N2Zz4="/>
+            </div>
+            <span class="alert  alert-success message-alert file-info center-block" id="file-info">No hay archivo aún</span>
+            <form id="file-submit" enctype="multipart/form-data">
+              <input id="file" name="file" type="file"/>
+            </form>
+            <a href="#" class="btn  center-block save" id="file-save">Guardar</a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="gray" id="imagen">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="../vendors/js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/profile-job.js"></script>
+  <script type="text/javascript" src="../js/data.js"></script>
+ </body>
+</html>

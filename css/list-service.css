@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin : 0;
+    padding: 0;
+  }
+
+/* PHOTOS CARD*/
+.photo-card{
+  height: 30vh;
+  width: 40vh;
+  background-repeat: no-repeat;
+  background-position: center center center center;
+  border-radius: 100%;
+  background-size: 100% auto;
+}
+
+#photo-card-1{
+  background-image: url('../assets/images/list-service/electricista-1.jpg');
+}
+
+#photo-card-2{
+  background-image: url('../assets/images/list-service/electricista-2.jpg');
+}
+
+#photo-card-3{
+  background-image: url('../assets/images/list-service/electricista-3.jpg');
+}
+
+  /* BACKGROUND */
+.back-navbar{
+  background-color: black;
+  /*height: 11vh;*/
+  margin-bottom: 0;
+}
+
+.grad4 {
+  background: linear-gradient( rgb(0,195,142) 4%, rgb(17, 17, 17));
+}
+
+.back-list-service {
+  background-color: #00c38e ;
+  height: 200vh;
+}
+
+.title-list-service {
+  color: white;
+  text-align: center;
+  position:relative;
+  left: 200px;
+  top: -50px;
+}
+
+.activa{
+    background-color: #00c38e;
+}
+
+/* IMAGENES HEADERS */
+
+.logo-size {
+  height: 4vh;
+}
+
+/* LETTERS*/
+.subt-letter {
+  text-align: center;
+  margin: 0;
+}
+
+.letter-name ,.letter-resum{
+  margin: 0;
+  color: black;
+}
+
+.color-btn-green {
+  background-color: rgb(136, 211, 85);
+  color: black;
+  border: 1px solid rgb(136, 211, 85);
+}
+
+/* CALIFICACION 5 ESTRELLAS */
+
+label{
+  color:grey;
+}
+
+input[type = "radio"]{
+  display:none;
+}
+
+label:hover{
+  color:orange;
+}
+
+label:hover ~ label{
+  color:orange;
+}
+
+input[type = "radio"]:checked ~ label{
+  color:orange;
+}
+
+#form {
+  width: 250px;
+  margin: 0 auto;
+  height: 50px;
+}
+
+#form p {
+  text-align: center;
+}
+
+#form label {
+  font-size: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+}
+
+.clasificacion {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  margin-bottom: 0;
+}
+
+label:hover, label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+
+.size-star {
+  font-size: 2.0em;
+}
+
+/* SECCION PUBLICACIONES */
+.app{
+  margin-top: 20px;
+}
+
+.title{
+  background-color: #0c0c0c;
+  color: white;
+  font-size: 2em;
+  padding: 2px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.subtitle {
+  color:white;
+  font-size: 1.5em;
+  padding: 2px 0;
+  width: 100%;
+}
+
+textarea{
+  border-radius: 1em;
+  display: block;
+  margin: 1em auto;
+  width: 90%;
+}
+
+.new{
+  background-color: white;
+  border: 0.1em solid #00c38e;
+  border-radius: 5px;
+  display: block;
+  height: auto;
+  margin: 15px 0;
+  padding: 15px 40px 15px 15px;
+  position: relative;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+#container-to-do{
+  margin: 15px 0;
+}
+
+.labeled{
+  text-decoration:line-through;
+}
+.icon{
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 40%;
+}
+.return{
+  color:white;
+}
+/* CLASE REUTILIZABLE ICONO*/
+.box{
+  border:1px solid #ced2d3;
+  background-color: white;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}

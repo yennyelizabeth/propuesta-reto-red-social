@@ -1,0 +1,134 @@
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* clases reutilizables */
+.grad4 {
+  background: linear-gradient( rgb(0,195,142) 4%, rgb(17, 17, 17));
+}
+
+.vh100 {
+	height: 100vh;
+}
+
+.container-flex-column{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2em;
+}
+
+.icon {
+	color: #ffffff;
+}
+
+.phone {
+	display: block;
+}
+
+.desktop{
+	display: none;
+}
+/* estilos index */
+
+main h1,.section-option h3{
+	color: #000000;
+}
+
+/* sectionn-option */
+.section-option i{
+	color: #00c38e;
+}
+
+img[alt="logo-menu"]{
+	height: 6vh;
+	width: 20vw;
+}
+
+.subtitle-h2{
+	color: dimgrey;
+}
+
+.subtitle-h2:hover{
+	color: #ffffff;
+}
+
+/* section-register */
+.line{
+	width: 95%;
+	margin: 4%;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: visible;
+	box-sizing: content-box;
+	background-color: #ffffff;
+}
+
+.line::after{
+	content: "O";
+	padding: 0 1em;
+	position: relative;
+	bottom: 0.9em;
+	font-size: 12px;
+	color: #ffffff;
+	display: inline-block;
+	background-color: #1e533c;
+}
+
+/* section-profile */
+
+
+.img-profile{
+	height: 7vh;
+	width: 7vw;
+	/* outline: 1px solid red; */
+}
+
+.section-profile figure{
+	max-width: 30%;
+	/* outline: 1px solid white; */
+}
+
+.description{
+	z-index: 20;
+	margin-top: 8em;
+}
+
+@media screen and (min-width:991px){
+/* section-option */
+
+	.phone{
+		display: none;
+	}
+
+	.desktop{
+		display: block;
+	}
+	img[alt="logo-menu"]{
+		height: 5vh;
+		width: 7vw;
+	}
+
+	.subtitle-h2{
+		display: inline-block;
+		position: relative;
+		left: 12em;
+	}
+
+	.center-ul{
+		position: relative;
+		top: 0.6em;
+	}
+
+	.go-up{
+		position: relative;
+		bottom: 13em;
+	}
+
+	.align-right{
+		position: relative;
+		right: 10em;
+	}
+}

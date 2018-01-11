@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Red Social Oficios</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/profile-job.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-default nav-menu1">
+      <div class="container-fluid">
+        <div class="navbar-header nav-head">
+          <!--boton barras para la version mobile-->
+          <button type="button" class="navbar-toggle collapsed boton-hamburger" data-toggle="collapse" data-target="#navbar-1">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--logo obchod-->
+          <a class="navbar-brand" href="#">
+            <img src="../assets/images/logo2.PNG" alt="logo-menu">
+          </a>
+          <h1 class="white title1">Obchod</h1>
+        </div>
+        <!--Menu despegable para desktop y mobile-->
+        <div class="collapse navbar-collapse" id="navbar-1">
+          <!--se posciona al lado derecho en desktop-->
+          <ul class="nav navbar-nav navbar-right ">
+            <li><a href="#">Quienes somos</a></li>
+            <li><a href="#">Oficios</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="gradient">
+    <a class="navbar-brand white" href="list-services.html"><i class="fa fa-home" aria-hidden="true"></i></a>
+    <a class="navbar-brand white user " href="profile-client.html"><i class="fa fa-user-circle-o " aria-hidden="true"></i></a>
+    <!--sección foto-->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <figure>
+            <img src="../assets/images/list-service/electricista-1.jpg" alt="electricista" class="center-block img-circle">
+          </figure>
+        </div>
+        <div class="col-xs-12">
+          <button type="button" class="btn btn-default btn-call center-block" href="#iniciar" data-toggle="modal" id="call"><i class="fa fa-phone" aria-hidden="true"></i>llamar</button>
+          <button type="button" class="btn btn-default btn-call center-block hide" href="#iniciar" data-toggle="modal" id="number">3333857546</button>
+        </div>
+        <!--modal-->
+        <div class="modal fade" id="iniciar">
+          <div class="modal-dialog" role="document" >
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center">Bienvenido a ObChOd</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <!--entrada para el nombre-->
+                  <div class="col-xs-6">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></div>
+                        <input type="text" class="form-control" id="first-name" placeholder="First name" required>
+                      </div>
+                    </div>
+                  </div>
+                  <!--entrada para el apellido-->
+                  <div class="col-xs-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="last-name"  placeholder="Last name" required>
+                    </div>
+                  </div>
+                </div>
+                <!--entrada para el correo-->
+                <div class="form-group">
+                  <div class="input-group">
+                    <div class="input-group-addon"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></div>
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="login">Login</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--finaliza el modal-->
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h3 class="text-center white">Datos personales</h3>
+          <div class="dates" id="dates">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--sección para estrellas-->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="gray">
+            <h1 class="white text-center">Calificame</h1>
+            <h3 class="white"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Responsabilidad</h1>
+              <div id="star-responsability" class="text-center"></div>
+              <h3 class="white"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Puntualidad</h1>
+                <div id="star-puntuality" class="text-center"></div>
+                <h3 class="white"><i class="fa fa-dot-circle-o" aria-hidden="true"></i> Calidad</h1>
+                  <div id="star-quality" class="text-center"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <script src="../vendors/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../vendors/raty-2.8.0/jquery.raty.js"></script>
+        <script type="text/javascript" src="../js/profile-job-client.js"></script>
+        <script type="text/javascript" src="../js/data.js"></script>
+      </body>
+    </html>
